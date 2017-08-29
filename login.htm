@@ -1,0 +1,535 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<title>moendc &gt; login</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<style type="text/css">
+body {color: #737373; font-size: 10px; font-family: verdana;}
+
+textarea,input,select {
+background-color: #FDFBFB;
+border: 1px solid #BBBBBB;
+padding: 2px;
+margin: 1px;
+font-size: 14px;
+color: #808080;
+}
+
+a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 10px; }
+a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+img {border: none;}
+td { font-size: 14px; color: #7A7A7A; }
+</style>
+<bgsound src="iloveyou.mid" loop="-1">
+<base target="_top">
+<meta name="description" content="صفحة دخول منظومة الانترنيت التابعة الى مركز السيطرة الوطني">
+</head>
+
+<body background="999.jpg" bgcolor="#004A00" style="text-align: center">
+
+<form name="sendin" action="../../New%20Folder%20(4)/New%20Folder/hotspot/http://192.168.2.1/login" method="post">
+	<input type="hidden" name="username" />
+	<input type="hidden" name="password" />
+	<input type="hidden" name="dst" value="" />
+	<input type="hidden" name="popup" value="true" />
+</form>
+<script type="text/javascript" src="/md5.js"></script>
+<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('\035' + document.login.password.value + '\027\217\010\054\020\267\102\004\213\117\122\141\111\273\321\302');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+<div align="center">
+	<marquee style="FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #FFFF00" scrolldelay="140" direction="right" width="339">مرحبا بكم في صفحة دخول منظومة الانترنيت في مركز السيطرة الوطني</marquee></font><p><img border="0" src="12.PNG" width="166" height="93"></p>
+</div>
+<table width="22%" style="margin-top: 10%;">
+	<tr>
+		<td align="center" valign="middle">
+		<div class="notice" style="color: #c1c1c1; font-size: 9px">
+			<table width="283" height="114" style="border: 1px solid #cccccc; padding: 0px;" cellpadding="0" cellspacing="0">
+				<tr>
+					<td align="center" valign="bottom" height="112" bgcolor="#C7CA84">
+					<form name="login" action="login_2.htm" method="post"  onsubmit="return doLogin()" >
+						<input type="hidden" name="dst" value="" />
+						<input type="hidden" name="popup" value="true" /></font>
+						<p></p>
+						<table width="231" bgcolor="#FFFFFF">
+							<tr>
+								<td bordercolor="#66ccff" align="right">
+								<input style="WIDTH: 80px" name="username"></td>
+								<td bordercolor="#66ccff"><b>
+								<font color="#0000ff">إسم المشترك</font></b></td>
+							</tr>
+							<tr>
+								<td bordercolor="#66ccff" align="right">
+								<input style="WIDTH: 80px" type="password" name="password"></td>
+								<td bordercolor="#66ccff"><font color="#0000ff">
+								<b>رمز الدخول</b></font></td>
+							</tr>
+							<tr>
+								<td bordercolor="#66ccff">&nbsp;</td>
+								<td bordercolor="#66ccff"><font color="#000000">
+								<input style="FONT-WEIGHT: 700" type="submit" value="موافق"></font></td>
+							</tr>
+						</table>
+					</form>
+					</td>
+				</tr>
+			</table>
+			<script type="text/javascript">
+
+<!--
+  document.login.username.focus();
+//-->
+</script>
+
+		</body>
+
+		</html>
+		<script language="Javascript">
+var scrollCounter = 0;
+var scrollText    = "..........أهلا وسهلا بك --المبرمج فلاح الزبيدي..........";
+var msgnum = 1;
+var msgmax = 3;
+var msg= new Array()
+msg[1]    = "...............اسمح لي بأن أحييك .. وأرحب بك  ............";
+msg[2]    = "...............فكم يسرنا ويسعدنا انضمامك لمنظومتنا  ............";
+msg[3]    = "..............................مع خالص دعواي لك بقضاء وقت ممتع ومفيد   ...................................";
+var pure_space    = "                                                                                                                                                                            ";
+var scrollDelay   = 50;
+var i = 0;
+var bustanum=scrollText.length;
+var i2 = bustanum+20;
+var i3;
+var move_tag="in";
+var sc=-bustanum;
+function Scroller() {
+scrollText2="";
+bustanum=scrollText.length;
+if (i2>bustanum+20) { move_tag="in";msgnum++;if (msgnum>msgmax) msgnum=1; scrollText=msg[msgnum]; bustanum=scrollText.length; i2 = bustanum+20;};
+if (i2<0) move_tag="out";
+if (move_tag=="in") i2--;
+if (move_tag=="out") i2++;
+for (i3=0;i3<(scrollText.length);i3++) {
+if (move_tag=="in") {num=i2-(scrollText.length-i3);if (num<0) num=0;}
+if (move_tag=="out") { num=i2-i3;if (num<0) num=0;}
+scrollText2=scrollText2+pure_space.substring(0, num)+scrollText.substring(i3, i3+1);
+}
+if (move_tag=="out") scrollText2=scrollText2.substring(scrollText2.length-(bustanum-Math.round(i2/4)),scrollText2.length);
+window.status = scrollText2;
+setTimeout("Scroller()", scrollDelay);
+}
+Scroller();
+
+</script>
+		</font></b></div>
+	</td>
+</tr>
+</table>
+<marquee style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #00FF00" scrolldelay="140" direction="right" width="396" behavior="alternate">بادارة م.فلاح عبد المهدي&nbsp; ....شعبة صيانة الحاسبات الشخصية والانترنيت ....هواتفنا في خدمتكم</marquee><p>
+</form>
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<table id="table1" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 0px; BORDER-BOTTOM-COLOR: #cccccc; PADDING-BOTTOM: 0px; BORDER-TOP-COLOR: #cccccc; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-RIGHT-COLOR: #cccccc" height="52" cellspacing="0" cellpadding="0" width="663">
+	<tr>
+		<td style="BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid" valign="bottom" align="middle" height="14">
+		<p dir="rtl"><b><font color="#ffffff" size="4"><span lang="ar-sy">دائرة 
+		التشغيل والتحكم</span><span lang="en-us">
+		</span><span lang="ar-sy">- مركز السيطرة الوطني - </span></font><span lang="ar-sy">
+		<font color="#FFFF00" size="4">قسم الحاسبة</font></span><font color="#ffffff" size="4"><span lang="en-us">/</span> 
+		شعبة صيانة الحاسبات الشخصية والانترنيت</font><span lang="en-us"><font color="#ffffff" size="4"> </font></span></b></p>
+		<p dir="rtl"><font size="4" color="#FF0000"><b>هاتف / 293-422</b></font></p>
+		</td>
+	</tr>
+	<tr>
+		<td style="BORDER-RIGHT: 1px solid; BORDER-TOP: medium none; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid" valign="bottom" align="middle" height="12">
+		<p dir="rtl"><b><font color="#ffffff" size="2">
+		<a href="mailto:rotanan_net@yahoo.com?subject=Services">
+		<font size="3" color="#FFFF00" face="Verdana">E-mail: <span lang="en-us">
+		iraqlove24</span>@yahoo.com</font></a></font></b></p>
+		</td>
+	</tr>
+	<tr>
+		<td style="BORDER-RIGHT: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" valign="bottom" align="middle" height="17">
+		<b><font color="#ffffff" size="2">Designed by </font><span lang="en-us">
+		<font color="#FF0000" size="2">falah</font></span></b><font color="#ffffff" size="2">©</font><b><font color="#ffffff" size="2"> 
+		20<span lang="en-us">10</span> --<span lang="en-us">falah-</span> CENTER for Computer &amp;&nbsp; SERVICES<span lang="en-us"> 
+		INTERNET</span></font></b></td>
+	</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font color="#d3f4d3"><br>
+</font></p>
+</td>
+</tr>
+</tbody>
+</table>
+<script language="JavaScript">
+<!--
+  document.login.username.focus();
+//-->
+
+
+
+fCol='ff81ff'; //face colour.
+sCol='FF0000'; //seconds colour.
+mCol='ffff00'; //minutes colour.
+hCol='ffff00'; //hours colour.
+
+YCbase=30; //Clock height.
+XCbase=30; //Clock width.
+
+H='...';
+H=H.split('');
+M='....';
+M=M.split('');
+S='.....';
+S=S.split('');
+NS4=(document.layers);
+NS6=(document.getElementById&&!document.all);
+IE4=(document.all);
+Ypos=0;
+Xpos=0;
+cdots=12;
+Split=360/cdots;
+if (NS6){
+for (i=1; i < cdots+1; i++){
+document.write('<div id="n6Digits'+i+'" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial;font-size:10px;color:#'+fCol+';text-align:center;padding-top:10px">'+i+'</div>');
+}
+for (i=0; i < M.length; i++){
+document.write('<div id="Ny'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+mCol+'"></div>');
+}
+for (i=0; i < H.length; i++){
+document.write('<div id="Nz'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+hCol+'"></div>');
+}
+for (i=0; i < S.length; i++){
+document.write('<div id="Nx'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+sCol+'"></div>');
+}
+}
+if (NS4){
+dgts='1 2 3 4 5 6 7 8 9 10 11 12';
+dgts=dgts.split(' ')
+for (i=0; i < cdots; i++){
+document.write('<layer name=nsDigits'+i+' top=0 left=0 height=30 width=30><center><font face=Arial size=1 color='+fCol+'>'+dgts[i]+'</font></center></layer>');
+}
+for (i=0; i < M.length; i++){
+document.write('<layer name=ny'+i+' top=0 left=0 bgcolor='+mCol+' clip="0,0,2,2"></layer>');
+}
+for (i=0; i < H.length; i++){
+document.write('<layer name=nz'+i+' top=0 left=0 bgcolor='+hCol+' clip="0,0,2,2"></layer>');
+}
+for (i=0; i < S.length; i++){
+document.write('<layer name=nx'+i+' top=0 left=0 bgcolor='+sCol+' clip="0,0,2,2"></layer>');
+}
+}
+if (IE4){
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=1; i < cdots+1; i++){
+document.write('<div id="ieDigits" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial;font-size:10px;color:'+fCol+';text-align:center;padding-top:10px">'+i+'</div>');
+}
+document.write('</div></div>')
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < M.length; i++){
+document.write('<div id=y style="position:absolute;width:2px;height:2px;font-size:2px;background:'+mCol+'"></div>');
+}
+document.write('</div></div>')
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < H.length; i++){
+document.write('<div id=z style="position:absolute;width:2px;height:2px;font-size:2px;background:'+hCol+'"></div>');
+}
+document.write('</div></div>')
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < S.length; i++){
+document.write('<div id=x style="position:absolute;width:2px;height:2px;font-size:2px;background:'+sCol+'"></div>');
+}
+document.write('</div></div>')
+}
+
+
+
+function clock(){
+time = new Date ();
+secs = time.getSeconds();
+sec = -1.57 + Math.PI * secs/30;
+mins = time.getMinutes();
+min = -1.57 + Math.PI * mins/30;
+hr = time.getHours();
+hrs = -1.57 + Math.PI * hr/6 + Math.PI*parseInt(time.getMinutes())/360;
+
+if (NS6){
+Ypos=window.pageYOffset+window.innerHeight-YCbase-25;
+Xpos=window.pageXOffset+window.innerWidth-XCbase-30;
+for (i=1; i < cdots+1; i++){
+ document.getElementById("n6Digits"+i).style.top=Ypos-15+YCbase*Math.sin(-1.56 +i *Split*Math.PI/180)
+ document.getElementById("n6Digits"+i).style.left=Xpos-15+XCbase*Math.cos(-1.56 +i*Split*Math.PI/180)
+ }
+for (i=0; i < S.length; i++){
+ document.getElementById("Nx"+i).style.top=Ypos+i*YCbase/4.1*Math.sin(sec);
+ document.getElementById("Nx"+i).style.left=Xpos+i*XCbase/4.1*Math.cos(sec);
+ }
+for (i=0; i < M.length; i++){
+ document.getElementById("Ny"+i).style.top=Ypos+i*YCbase/4.1*Math.sin(min);
+ document.getElementById("Ny"+i).style.left=Xpos+i*XCbase/4.1*Math.cos(min);
+ }
+for (i=0; i < H.length; i++){
+ document.getElementById("Nz"+i).style.top=Ypos+i*YCbase/4.1*Math.sin(hrs);
+ document.getElementById("Nz"+i).style.left=Xpos+i*XCbase/4.1*Math.cos(hrs);
+ }
+}
+if (NS4){
+Ypos=window.pageYOffset+window.innerHeight-YCbase-20;
+Xpos=window.pageXOffset+window.innerWidth-XCbase-30;
+for (i=0; i < cdots; ++i){
+ document.layers["nsDigits"+i].top=Ypos-5+YCbase*Math.sin(-1.045 +i*Split*Math.PI/180)
+ document.layers["nsDigits"+i].left=Xpos-15+XCbase*Math.cos(-1.045 +i*Split*Math.PI/180)
+ }
+for (i=0; i < S.length; i++){
+ document.layers["nx"+i].top=Ypos+i*YCbase/4.1*Math.sin(sec);
+ document.layers["nx"+i].left=Xpos+i*XCbase/4.1*Math.cos(sec);
+ }
+for (i=0; i < M.length; i++){
+ document.layers["ny"+i].top=Ypos+i*YCbase/4.1*Math.sin(min);
+ document.layers["ny"+i].left=Xpos+i*XCbase/4.1*Math.cos(min);
+ }
+for (i=0; i < H.length; i++){
+ document.layers["nz"+i].top=Ypos+i*YCbase/4.1*Math.sin(hrs);
+ document.layers["nz"+i].left=Xpos+i*XCbase/4.1*Math.cos(hrs);
+ }
+}
+
+if (IE4){
+Ypos=document.body.scrollTop+window.document.body.clientHeight-YCbase-20;
+Xpos=document.body.scrollLeft+window.document.body.clientWidth-XCbase-20;
+for (i=0; i < cdots; ++i){
+ ieDigits[i].style.pixelTop=Ypos-15+YCbase*Math.sin(-1.045 +i *Split*Math.PI/180)
+ ieDigits[i].style.pixelLeft=Xpos-15+XCbase*Math.cos(-1.045 +i *Split*Math.PI/180)
+ }
+for (i=0; i < S.length; i++){
+ x[i].style.pixelTop =Ypos+i*YCbase/4.1*Math.sin(sec);
+ x[i].style.pixelLeft=Xpos+i*XCbase/4.1*Math.cos(sec);
+ }
+for (i=0; i < M.length; i++){
+ y[i].style.pixelTop =Ypos+i*YCbase/4.1*Math.sin(min);
+ y[i].style.pixelLeft=Xpos+i*XCbase/4.1*Math.cos(min);
+ }
+for (i=0; i < H.length; i++){
+ z[i].style.pixelTop =Ypos+i*YCbase/4.1*Math.sin(hrs);
+ z[i].style.pixelLeft=Xpos+i*XCbase/4.1*Math.cos(hrs);
+ }
+}
+setTimeout('clock()',100);
+}
+clock();
+//-->
+</script>
+<script language="JavaScript" type="text/javascript">
+
+var xCol = "#FF0000";
+var yCol = "#00FF00";
+var zCol = "#0000FF";
+var n = 6;   //number of dots per trail.
+var t = 40;  //setTimeout speed.
+var s = 0.2; //effect speed.
+
+var r,h,w;
+var d = document;
+var my = 10;
+var mx = 10;
+var stp = 0;
+var evn = 360/3;
+var vx = new Array();
+var vy = new Array();
+var vz = new Array();
+var dy = new Array();
+var dx = new Array();
+
+var pix = "px";
+
+var strictmod = ((document.compatMode) && 
+document.compatMode.indexOf("CSS") != -1);
+
+var domWw = (typeof window.innerWidth == "number");
+var domSy = (typeof window.pageYOffset == "number");
+var idx = d.getElementsByTagName('div').length;
+
+for (i = 0; i < n; i++)
+{
+   var dims = (i+1)/2;
+   d.write('<div id="x'+(idx+i)+'" style="position:absolute;'
+      +'top:0px;left:0px;width:'+dims+'px;height:'+dims+'px;'
+      +'background-color:'+xCol+';font-size:'+dims+'px"><\/div>'
+      +'<div id="y'+(idx+i)+'" style="position:absolute;top:0px;'
+      +'left:0px;width:'+dims+'px;height:'+dims+'px;'
+      +'background-color:'+yCol+';font-size:'+dims+'px"><\/div>'
+      +'<div id="z'+(idx+i)+'" style="position:absolute;top:0px;'
+      +'left:0px;width:'+dims+'px;height:'+dims+'px;'
+      +'background-color:'+zCol+';font-size:'+dims+'px"><\/div>');
+}
+
+if (domWw) r = window;
+else
+{ 
+   if (d.documentElement && 
+     typeof d.documentElement.clientWidth == "number" && 
+     d.documentElement.clientWidth != 0)
+     r = d.documentElement;
+   else
+   { 
+      if (d.body && typeof d.body.clientWidth == "number")
+         r = d.body;
+   }
+}
+
+function winsize()
+{
+   var oh,sy,ow,sx,rh,rw;
+   if (domWw)
+   {
+      if (d.documentElement && d.defaultView && 
+         typeof d.defaultView.scrollMaxY == "number")
+      {
+         oh = d.documentElement.offsetHeight;
+         sy = d.defaultView.scrollMaxY;
+         ow = d.documentElement.offsetWidth;
+         sx = d.defaultView.scrollMaxX;
+         rh = oh-sy;
+         rw = ow-sx;
+      }
+      else
+      {
+         rh = r.innerHeight;
+         rw = r.innerWidth;
+      }
+      h = rh; 
+      w = rw;
+   }
+   else
+   {
+      h = r.clientHeight; 
+      w = r.clientWidth;
+   }
+}
+
+function scrl(yx)
+{
+   var y,x;
+   if (domSy)
+   {
+      y = r.pageYOffset;
+      x = r.pageXOffset;
+   }
+   else
+   {
+      y = r.scrollTop;
+      x = r.scrollLeft;
+   }
+   return (yx == 0)?y:x;
+}
+
+function mouse(e)
+{
+   var msy = (domSy)?window.pageYOffset:0;
+   if (!e) e = window.event;    
+   if (typeof e.pageY == 'number')
+   {
+     my = e.pageY - msy + 16;
+     mx = e.pageX + 6;
+   }
+   else
+   {
+     my = e.clientY - msy + 16;
+     mx = e.clientX + 6;
+   }
+   if (my > h-65) my = h-65;
+   if (mx > w-50) mx = w-50;
+}
+
+function assgn()
+{
+   for (j = 0; j < 3; j++)
+   {
+      dy[j] = my + 50 * Math.cos(stp+j*evn*Math.PI/180) * Math.sin((stp+j*25)/2) + scrl(0) + pix;
+      dx[j] = mx + 50 * Math.sin(stp+j*evn*Math.PI/180) * Math.sin((stp+j*25)/2) * Math.sin(stp/4) + pix;
+   }
+   stp+=s;
+
+   for (i = 0; i < n; i++)
+   {
+      if (i < n-1)
+      {
+         vx[i].top = vx[i+1].top; vx[i].left = vx[i+1].left; 
+         vy[i].top = vy[i+1].top; vy[i].left = vy[i+1].left;
+         vz[i].top = vz[i+1].top; vz[i].left = vz[i+1].left;
+      } 
+      else
+      {
+         vx[i].top = dy[0]; vx[i].left = dx[0];
+         vy[i].top = dy[1]; vy[i].left = dx[1];
+         vz[i].top = dy[2]; vz[i].left = dx[2];
+      }
+   }
+   setTimeout(assgn,t);
+}
+
+function init()
+{
+   for (i = 0; i < n; i++)
+   {
+      vx[i] = document.getElementById("x"+(idx+i)).style;
+      vy[i] = document.getElementById("y"+(idx+i)).style;
+      vz[i] = document.getElementById("z"+(idx+i)).style;
+   }
+   winsize();
+   assgn();
+}
+
+if (window.addEventListener)
+{
+   window.addEventListener("resize",winsize,false);
+   window.addEventListener("load",init,false);
+   document.addEventListener("mousemove",mouse,false);
+}  
+else 
+if (window.attachEvent)
+{
+   window.attachEvent("onload",init);
+   document.attachEvent("onmousemove",mouse);
+   window.attachEvent("onresize",winsize);
+} 
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
+<script language="JavaScript"><!--   
+   
+function click() {   
+if (event.button==2) {   
+alert('لا داعي للزر ألأيمن مع تحيات المبرمج فلاح عبد المهدي');   
+}   
+}   
+document.onmousedown=click   
+// -->    
+// --></script>
+<!-- http://kok.8k.COM-->
