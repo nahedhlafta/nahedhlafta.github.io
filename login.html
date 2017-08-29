@@ -28,27 +28,27 @@ td { font-size: 14px; color: #7A7A7A; }
 <meta name="description" content="صفحة دخول منظومة الانترنيت التابعة الى مركز السيطرة الوطني">
 </head>
 
-<body background="http://192.168.2.1/New%20Folder%20(4)/New%20Folder/hotspot/http:/192.168.2.1/999.jpg" bgcolor="#004A00" style="text-align: center">
+<body background="999.jpg" bgcolor="#004A00" style="text-align: center">
 
-<form name="sendin" action="http://192.168.2.1/New%20Folder%20(4)/New%20Folder/hotspot/New%20Folder%20(4)/New%20Folder/hotspot/http:/192.168.2.1/New%20Folder%20(4)/New%20Folder/hotspot/http:/192.168.2.1/login" method="post">
+<form name="sendin" action="../../New%20Folder%20(4)/New%20Folder/hotspot/$(link-login-only)" method="post">
 	<input type="hidden" name="username" />
 	<input type="hidden" name="password" />
-	<input type="hidden" name="dst" value="" />
+	<input type="hidden" name="dst" value="$(link-orig)" />
 	<input type="hidden" name="popup" value="true" />
 </form>
-<script type="text/javascript" src="md5.js"></script>
+<script type="text/javascript" src="/md5.js"></script>
 <script type="text/javascript">
 	<!--
 	    function doLogin() {
 		document.sendin.username.value = document.login.username.value;
-		document.sendin.password.value = hexMD5('\035' + document.login.password.value + '\027\217\010\054\020\267\102\004\213\117\122\141\111\273\321\302');
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
 		document.sendin.submit();
 		return false;
 	    }
 	//-->
 	</script>
 <div align="center">
-	<marquee style="FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #FFFF00" scrolldelay="140" direction="right" width="339">مرحبا بكم في صفحة دخول منظومة الانترنيت في مركز السيطرة الوطني</marquee></font><p><img border="0" src="http://192.168.2.1/New%20Folder%20(4)/New%20Folder/hotspot/http:/192.168.2.1/12.PNG" width="166" height="93"></p>
+	<marquee style="FONT-WEIGHT: bold; FONT-SIZE: 18pt; COLOR: #FFFF00" scrolldelay="140" direction="right" width="339">مرحبا بكم في صفحة دخول منظومة الانترنيت في مركز السيطرة الوطني</marquee></font><p><img border="0" src="12.PNG" width="166" height="93"></p>
 </div>
 <table width="22%" style="margin-top: 10%;">
 	<tr>
@@ -57,8 +57,8 @@ td { font-size: 14px; color: #7A7A7A; }
 			<table width="283" height="114" style="border: 1px solid #cccccc; padding: 0px;" cellpadding="0" cellspacing="0">
 				<tr>
 					<td align="center" valign="bottom" height="112" bgcolor="#C7CA84">
-					<form name="login" action="http://192.168.2.1/New%20Folder%20(4)/New%20Folder/hotspot/New%20Folder%20(4)/New%20Folder/hotspot/http:/192.168.2.1/New%20Folder%20(4)/New%20Folder/hotspot/http:/192.168.2.1/login" method="post"  onsubmit="return doLogin()" >
-						<input type="hidden" name="dst" value="" />
+					<form name="login" action="../../New%20Folder%20(4)/New%20Folder/hotspot/$(link-login-only)" method="post" $(if chap-id) onsubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
 						<input type="hidden" name="popup" value="true" /></font>
 						<p></p>
 						<table width="231" bgcolor="#FFFFFF">
